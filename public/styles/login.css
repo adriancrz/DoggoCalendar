@@ -1,0 +1,42 @@
+form {
+    margin: auto;
+  }
+  
+  
+  html {
+    background-image:  url("../images/FEB1712E-3FC8-49A3-904B-1988919C6376.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100%;
+  }
+  
+  .loginBox {
+    max-width: 300px;
+    margin: auto;
+    background-color:goldenrod;
+    padding: 20px;
+    border: transparent solid 2px;
+    border-radius: 10px;
+  
+  }
+  
+  .title, .subtitle {
+    font-family: 'Calibri', sans-serif;
+    color: black !important;
+    text-shadow: 0 0 2px black;
+  }
+  
+  .modal-card-body{
+    background-image: url("../images/486A6AA2-572B-40D6-9EF5-7B852AF27237.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .modal-card-head,
+  .modal-card-foot {
+    background-color: yellow;
+  }
+  
+  
