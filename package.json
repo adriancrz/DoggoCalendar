@@ -1,0 +1,39 @@
+{
+  "name": "doggocalendar",
+  "version": "1.0.0",
+  "description": "Doggos Play Date Calendar",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriancrz/DoggoCalendar.git"
+  },
+  "keywords": [
+    "dog"
+  ],
+  "author": "adrián",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adriancrz/DoggoCalendar/issues"
+  },
+  "homepage": "https://github.com/adriancrz/DoggoCalendar#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.0",
+    "express-session": "^1.17.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^5.21.5"
+  }
+}
