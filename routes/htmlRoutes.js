@@ -1,5 +1,5 @@
 var db = require("../models");
-var isAuthenticated = require("../config/middleware/isAuthenticated");
+var isAuthenticated = require("../config/middleware/isAuthenticated.js");
 
 
 module.exports = function(app) {
@@ -77,6 +77,7 @@ module.exports = function(app) {
   app.get("/user/profile", isAuthenticated, (request, response, next) => {
       response.render("profile", {
         title: "User Profile",
+        layout: "../profile"
     });
   });
 
@@ -95,7 +96,7 @@ module.exports = function(app) {
   app.get("/", (request, response) => {
     response.render("index", 
     {
-      title: "Dogs Day Out",
+      title: "Doggo Calendar",
       layout: "login"
     });
   });

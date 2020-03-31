@@ -1,4 +1,4 @@
-USE dogs_day_out;
+USE doggo_calendar;
 
 INSERT INTO Parks (name, lat, lon, createdAt, updatedAt)
 VALUES

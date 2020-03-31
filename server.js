@@ -24,7 +24,7 @@ app.use(passport.session());
 app.engine(
   "handlebars",
   exphbs({
-    defaultLayout: "main"
+    defaultLayout: "main",
   })
 );
 app.set("view engine", "handlebars");
