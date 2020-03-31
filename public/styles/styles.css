@@ -20,9 +20,9 @@ html {
   
   }
   
-  .navButton i {
-    /* text-shadow: 0 0 .01rem black; */
-  }
+  /*.navButton i {
+    /* text-shadow: 0 0 .01rem black; 
+  }*/
   
   .title, .subtitle {
     color: white !important;
@@ -150,9 +150,9 @@ html {
   /* ***************************** */
   /* ********event page ********** */
   
-    #attendeesColumn{
-      /* border: black 2px solid; */
-    }
+   /* #attendeesColumn{
+      /* border: black 2px solid; 
+    }*/
   
     #attendeesBox{
       /* border: blue 2px solid; */
@@ -357,9 +357,9 @@ html {
       border-radius: 1rem;
       
     }
-    #chatForm {
-      /* border-bottom: solid black 1px */
-    }
+    /* #chatForm {
+      /* border-bottom: solid black 1px 
+    } */
     #chatArea{
       position: relative;
       /* background-color: hsl(206, 36%, 20%); */
