@@ -1,5 +1,5 @@
 var db = require("../models");
-var isAuthenticated = require("../config/middleware/isAuthenticated.js");
+var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 
 module.exports = function(app) {
@@ -77,7 +77,6 @@ module.exports = function(app) {
   app.get("/user/profile", isAuthenticated, (request, response, next) => {
       response.render("profile", {
         title: "User Profile",
-        layout: "../profile"
     });
   });
 
@@ -85,14 +84,6 @@ module.exports = function(app) {
     response.render("createAccount", 
     {
       title: "New User",
-      layout: "/layouts/login"
-    });
-  });
-
-  app.get("/user/login", (request, response) => {
-    response.render("layouts/login", 
-    {
-      title: "Log in Page",
       layout: "login"
     });
   });
@@ -104,8 +95,8 @@ module.exports = function(app) {
   app.get("/", (request, response) => {
     response.render("index", 
     {
-      title: "Doggo Calendar",
-      layout: "/layouts/login"
+      title: "Dogs Day Out",
+      layout: "login"
     });
   });
 

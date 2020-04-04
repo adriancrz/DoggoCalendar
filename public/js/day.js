@@ -43,7 +43,7 @@ function setUpShowOnMapButtons() {
 // This is the entry point callback specified in the script tag for the google maps API.
 function initMap() {
   map = new google.maps.Map($("#map")[0], {
-    center: {lat: 29.4198, lng: 98.4866},
+    center: {lat: 29.419534, lng: -98.487104},
     zoom: 11,
   });
 

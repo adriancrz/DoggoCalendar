@@ -6,13 +6,15 @@
       <div class="modal-content">
         <div class="modal-card">
           <header class="modal-card-head">
+          {{!-- empty header --}}
           </header>
           <section class="modal-card-body">
-            <div class="doggo-modal-content has-text-centered">
-              <h3 class="title is-3">Woof! Something is not ok!<br>Please Try Again!</h3>
+            <div class="dog-modal-content has-text-centered">
+              <h3 class="title is-3">Something Went Wrong!<br>Please Try Again!</h3>
             </div>
           </section>
           <footer class="modal-card-foot">
+            {{!-- empty footer because it looks nice --}}
           </footer>
         </div>
       </div>
@@ -22,11 +24,13 @@
 <div class="section">
   <!-- main container -->
   <div class="container">
+    <!-- title/subtitle box -->
     <div class="content has-text-centered wow fadeInUp" data-wow-duration="0.75s" data-wow-delay=".5s">
-      <h1 class="title is-1">DoggoCalendar!</h1>
-      <h2 class="subtitle is-3">Because your 4-legged BFF also needs some friends!</h2>
+      <h1 class="title is-1">Doggo Calendar!</h1>
+      <h2 class="subtitle is-3">Your Dog's Play Date Scheduler!</h2>
     </div>
     <!-- login form box -->
+      {{!-- <div class="level"> --}}
         <div class="loginBox has-text-centered wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
           <form id="login">
             <!-- user name field -->
@@ -50,6 +54,7 @@
             </div>
           </form>
         </div>
+      {{!-- </div> --}}
   </div><!-- end container -->
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>

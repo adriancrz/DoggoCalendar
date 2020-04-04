@@ -1,19 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{{title}}}</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
-  <link rel="shortcut icon" href="/images/dog-paw.png">
-</head>
-
 <div class="section">
   <div class="container">
     <div class="content">
@@ -47,7 +31,7 @@
                     <div class="field">
                       <div class="control">
                         <button class="button" id="nameBtn">
-                          Woof's your name?
+                          Update Public Name
                         </button>
                       </div>
                     </div>
@@ -77,13 +61,13 @@
       </div>
     </div>
 
-    <div class="card profile-doggo-card">
+    <div class="card profile-dog-card">
       <div class="card-content">
-        <div class="content doggo-title-level">
-          <h2 class="subtitle doggo-title-item" id="dogSubtitle">Your Dog(s)</h2>
-          <button class="button doggo-title-item" id="adddoggoBtn">Add a dog</button>
+        <div class="content dog-title-level">
+          <h2 class="subtitle dog-title-item" id="dogSubtitle">Your Dog(s)</h2>
+          <button class="button dog-title-item" id="addDogBtn">Add a dog</button>
         </div>
-        <div class="content" id="doggoContent">
+        <div class="content" id="dogContent">
         </div>
       </div>
     </div>
@@ -91,44 +75,42 @@
 </div>
 
 <!-- new dog modal -->
-<div id="newDoggoModal" class="modal">
-  <div class="modal-background" id="DoggoAddModalBackground"></div>
+<div id="newDogModal" class="modal">
+  <div class="modal-background" id="dogAddModalBackground"></div>
   <div class="modal-content">
     <div class="box">
       <div class="field">
-        <label class="label">Doggo's Name</label>
+        <label class="label">Dog's Name</label>
         <div class="control">
-          <input class="input" type="text" id="doggome" required/>
+          <input class="input" type="text" id="dogName" required/>
         </div>
       </div>
       <div class="field">
-        <label class="label">doggo's Gender</label>
+        <label class="label">Dog's Gender</label>
         <div class="control">
-          <select class="select" id="doggoGender" required>
+          <select class="select" id="dogGender" required>
             <option value="male">Male</option>
             <option value="female">Female</option>
-            <option value="fluid">Fluid</option>
-
           </select>
         </div>
       </div>
       <div class="field">
-        <label class="label">Doggo's Weight (in pounds)</label>
-        <input class="input" type="number" id="doggoWeight" required/>
+        <label class="label">Dog's Weight (in pounds)</label>
+        <input class="input" type="number" id="dogWeight" required/>
       </div>
       <div class="field">
-        <label class="label">Doggo's Bio</label>
+        <label class="label">Dog's Bio</label>
         <input
           class="input"
           type="text"
-          placeholder="Tell us about your doggo!"
-          id="doggoBio"
+          placeholder="Tell us about your dog!"
+          id="dogBio"
         />
       </div>
       <div class="field">
-        <label class="label">How energetic is your doggo?</label>
+        <label class="label">How energetic is your dog?</label>
         <div class="control">
-          <select class="select" id="doggoEnergy" required>
+          <select class="select" id="dogEnergy" required>
             <option value="1">1 (Not at all)</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -139,8 +121,21 @@
         </div>
       </div>
       <div class="field">
+        <label class="label">How patient is your dog?</label>
+        <div class="control">
+          <select class="select" id="dogPatience" required>
+            <option value="1">1 (Not at all)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6 (Very patient)</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
         <label class="label"
-          >How dominant does your doggo tend to be with other doggos?</label
+          >How dominant does your dog tend to be with other dogs?</label
         >
         <div class="control">
           <select class="select" id="dogDominance" required> 
@@ -153,7 +148,7 @@
           </select>
         </div>
       </div>
-      <button class="button" id="submitDoggoBtn">Submit</button>
+      <button class="button" id="submitDogBtn">Submit</button>
     </div>
   </div>
   <button class="modal-close is-large" aria-label="close"></button>
@@ -196,5 +191,3 @@
 </div>
 
 <script src="/js/profile.js"></script>
-
-</html>

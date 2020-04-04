@@ -1,13 +1,13 @@
 var parks = [
     {
       name: "Zilker Park",
-      lat: 30.1549,
-      lon:  97.4636
+      lat: 30.289310,
+      lon:  -97.777705
     },
     {
       name: "Hemisfair Park",
-      lat: 29.4198,
-      lon: 98.486
+      lat: 29.419534,
+      lon: -98.487104
     }
   ];
   
