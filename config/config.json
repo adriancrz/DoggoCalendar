@@ -1,7 +1,7 @@
 {
     "development": {
       "username": "root",
-      "password": "B^9whnxM39R2?AdoMDdj",
+      "password": "password",
       "database": "doggo_calendar",
       "host": "localhost",
       "dialect": "mysql"

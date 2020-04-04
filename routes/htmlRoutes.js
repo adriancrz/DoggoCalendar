@@ -85,6 +85,14 @@ module.exports = function(app) {
     response.render("createAccount", 
     {
       title: "New User",
+      layout: "/layouts/login"
+    });
+  });
+
+  app.get("/user/login", (request, response) => {
+    response.render("layouts/login", 
+    {
+      title: "Log in Page",
       layout: "login"
     });
   });
@@ -97,7 +105,7 @@ module.exports = function(app) {
     response.render("index", 
     {
       title: "Doggo Calendar",
-      layout: "login"
+      layout: "/layouts/login"
     });
   });
 
