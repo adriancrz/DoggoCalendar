@@ -7,8 +7,9 @@ var basename = path.basename(module.filename);
 var env = process.env.NODE_ENV || "development";
 var config = require(__dirname + "/../config/config.json")[env];
 var db = {};
-
+console.log('ENV', env)
 if (config.use_env_variable) {
+  console.log('config', config)
   var sequelize = new Sequelize(process.env[config.use_env_variable]);
 } else {
   var sequelize = new Sequelize(
@@ -18,6 +19,8 @@ if (config.use_env_variable) {
     config
   );
 }
+
+console.log('exporting')
 
 fs.readdirSync(__dirname)
   .filter(function(file) {
