@@ -2,7 +2,7 @@
 
 Doggo Calendar helps pet owners to improve their play date schedule and find an easier way to meet other pet owners.
 
-<img src= "readmeimages/Screen%20Shot%202020-06-05%20at%203.41.47%20PM.png">
+<img src= "Screen%20Shot%202020-06-27%20at%2019.37.14.png">
 
 # Technologies Used
 - CSS
