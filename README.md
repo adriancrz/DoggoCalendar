@@ -17,7 +17,7 @@ Doggo Calendar helps pet owners to improve their play date schedule and find an 
 https://doggocalendar.herokuapp.com/
 
 # Instructions
-clone repository
-type "npm install" on terminal command line
-type "npm start" on terminal command line
-page will start on localhost/3000
+- clone repository
+- type "npm install" on terminal command line
+- type "npm start" on terminal command line
+- page will start on localhost/3000
